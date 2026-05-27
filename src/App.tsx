@@ -5,7 +5,7 @@ import { DiarySamplesPage } from '@/pages/DiarySamplesPage';
 
 export default function App() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-grey-50">
       <Header />
       <main className="flex-1">
         <Routes>
@@ -21,10 +21,14 @@ export default function App() {
 
 function Footer() {
   return (
-    <footer className="border-t border-ink-200 bg-ink-50/60">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6 flex items-center justify-between flex-wrap gap-3 text-xs text-ink-500">
-        <p className="font-mono">© Inkwell · diary emotion vocabulary</p>
-        <p className="font-display italic">Write what you feel, in English.</p>
+    <footer className="border-t border-grey-100 bg-white">
+      <div className="max-w-5xl mx-auto px-5 sm:px-6 py-8 flex items-center justify-between flex-wrap gap-3">
+        <p className="text-[13px] font-semibold text-grey-500 tracking-tight">
+          © Inkwell
+        </p>
+        <p className="text-[13px] font-medium text-grey-400 tracking-tight">
+          Write what you feel, in English.
+        </p>
       </div>
     </footer>
   );

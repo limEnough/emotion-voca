@@ -26,7 +26,7 @@ export function ToastProvider({ children }: { children: ReactNode }) {
   return (
     <ToastContext.Provider value={{ showToast }}>
       {children}
-      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-[100] flex flex-col gap-2 pointer-events-none">
+      <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-[100] flex flex-col gap-2 pointer-events-none">
         {toasts.map((t) => (
           <ToastItem key={t.id} toast={t} />
         ))}
@@ -44,18 +44,23 @@ function ToastItem({ toast }: { toast: Toast }) {
 
   const toneStyle =
     toast.tone === 'error'
-      ? 'bg-accent-coral text-white'
+      ? 'bg-negative text-white'
       : toast.tone === 'info'
-      ? 'bg-ink-700 text-ink-50'
-      : 'bg-ink-900 text-ink-50';
+      ? 'bg-grey-700 text-white'
+      : 'bg-grey-900 text-white';
 
   return (
     <div
-      className={`pointer-events-auto px-4 py-2.5 rounded-full text-sm font-medium shadow-lg transition-all duration-300 ${toneStyle} ${
-        visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'
+      className={`pointer-events-auto inline-flex items-center gap-2 px-5 py-3 rounded-2xl text-[14px] font-semibold shadow-[0_8px_24px_rgba(0,0,0,0.12)] transition-all duration-300 ${toneStyle} ${
+        visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
       }`}
     >
-      {toast.message}
+      {toast.tone === 'success' && (
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M20 6L9 17l-5-5" />
+        </svg>
+      )}
+      <span>{toast.message}</span>
     </div>
   );
 }

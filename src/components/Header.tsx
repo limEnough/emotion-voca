@@ -3,12 +3,11 @@ import { cn } from '@/lib/utils';
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-40 backdrop-blur-md bg-ink-50/80 border-b border-ink-200">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between gap-3">
-        <Link to="/" className="flex items-center gap-2 focus-ring rounded-md">
+    <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-grey-100">
+      <div className="max-w-5xl mx-auto px-5 sm:px-6 h-16 flex items-center justify-between gap-3">
+        <Link to="/" className="flex items-center gap-2 focus-ring rounded-lg -ml-1 px-1 py-1">
           <Logo />
-          <span className="font-display italic text-lg sm:text-xl text-ink-900">Inkwell</span>
-          <span className="hidden sm:inline text-[11px] text-ink-500 ml-1">감정 표현 단어장</span>
+          <span className="font-bold text-lg sm:text-xl text-grey-900 tracking-tight">Inkwell</span>
         </Link>
 
         <nav className="flex items-center gap-1">
@@ -27,27 +26,22 @@ function HeaderLink({ to, children }: { to: string; children: React.ReactNode })
       end
       className={({ isActive }) =>
         cn(
-          'focus-ring px-3 py-2 text-sm font-medium rounded-md transition-colors relative',
-          isActive ? 'text-ink-900' : 'text-ink-600 hover:text-ink-900'
+          'focus-ring px-3.5 py-2 text-[15px] font-semibold rounded-lg transition-colors',
+          isActive
+            ? 'text-grey-900 bg-grey-100'
+            : 'text-grey-500 hover:text-grey-900 hover:bg-grey-50'
         )
       }
     >
-      {({ isActive }) => (
-        <span className="relative">
-          {children}
-          {isActive && (
-            <span className="absolute -bottom-2 left-0 right-0 h-0.5 bg-ink-900 rounded-full" />
-          )}
-        </span>
-      )}
+      {children}
     </NavLink>
   );
 }
 
 function Logo() {
   return (
-    <div className="w-7 h-7 rounded-md bg-ink-900 flex items-center justify-center">
-      <span className="font-display italic text-ink-50 text-sm leading-none">I</span>
+    <div className="w-8 h-8 rounded-lg bg-toss-400 flex items-center justify-center">
+      <span className="text-white font-bold text-base leading-none">I</span>
     </div>
   );
 }

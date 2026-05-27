@@ -7,28 +7,48 @@
     color-scheme: light;
   }
   html {
-    font-family: theme('fontFamily.ko');
-    background: theme('colors.ink.50');
-    color: theme('colors.ink.900');
+    font-family: theme('fontFamily.sans');
+    background: theme('colors.grey.50');
+    color: theme('colors.grey.900');
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: -0.01em;
   }
   body {
     min-height: 100vh;
   }
   ::selection {
-    background: theme('colors.ink.900');
-    color: theme('colors.ink.50');
+    background: theme('colors.toss.400');
+    color: #ffffff;
+  }
+  /* 스크롤바 톤다운 */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: theme('colors.grey.300');
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
   }
 }
 
 @layer components {
-  .paper-bg {
-    background-color: #faf8f4;
-    background-image:
-      radial-gradient(at 12% 18%, rgba(231, 111, 81, 0.04) 0px, transparent 50%),
-      radial-gradient(at 88% 82%, rgba(122, 158, 126, 0.04) 0px, transparent 50%);
-  }
   .focus-ring {
-    @apply outline-none focus-visible:ring-2 focus-visible:ring-ink-900 focus-visible:ring-offset-2 focus-visible:ring-offset-ink-50;
+    @apply outline-none focus-visible:ring-2 focus-visible:ring-toss-400 focus-visible:ring-offset-2 focus-visible:ring-offset-grey-50;
+  }
+  /* 토스 스타일 카드 — 흰 배경, 그림자 거의 없음 */
+  .toss-card {
+    @apply bg-white rounded-3xl border border-grey-100;
+  }
+  /* 토스 스타일 primary 버튼 */
+  .toss-btn-primary {
+    @apply inline-flex items-center justify-center font-semibold text-white bg-toss-400 hover:bg-toss-500 active:bg-toss-600 transition-colors;
+  }
+  /* 토스 스타일 secondary 버튼 */
+  .toss-btn-secondary {
+    @apply inline-flex items-center justify-center font-semibold text-grey-700 bg-grey-100 hover:bg-grey-200 active:bg-grey-300 transition-colors;
   }
 }

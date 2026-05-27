@@ -38,11 +38,11 @@ export function HomePage() {
   }, [data]);
 
   return (
-    <div className="paper-bg min-h-[calc(100vh-3.5rem)]">
+    <div className="min-h-[calc(100vh-4rem)]">
       <Hero />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-20">
-        <div className="space-y-4 mb-6">
+      <div className="max-w-5xl mx-auto px-5 sm:px-6 pb-24">
+        <div className="space-y-4 mb-8">
           <SearchInput value={search} onChange={setSearch} />
           <CategoryFilter
             categories={data?.categories ?? []}
@@ -55,8 +55,8 @@ export function HomePage() {
               onChange={setDifficultyFilter}
               counts={difficultyCounts}
             />
-            <p className="text-xs text-ink-500">
-              {isLoading ? '불러오는 중...' : `${filtered.length}개 표현`}
+            <p className="text-[13px] font-semibold text-grey-500 tracking-tight">
+              {isLoading ? '불러오는 중' : `${filtered.length}개 표현`}
             </p>
           </div>
         </div>
@@ -83,17 +83,14 @@ export function HomePage() {
 
 function Hero() {
   return (
-    <section className="max-w-6xl mx-auto px-4 sm:px-6 pt-10 sm:pt-16 pb-8 sm:pb-10">
-      <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-ink-500 mb-3">
-        emotion vocabulary for diary writers
-      </p>
-      <h1 className="font-display text-4xl sm:text-5xl md:text-6xl text-ink-900 leading-[1.05]">
+    <section className="max-w-5xl mx-auto px-5 sm:px-6 pt-12 sm:pt-20 pb-10 sm:pb-12">
+      <h1 className="text-[32px] sm:text-[44px] md:text-[52px] font-bold text-grey-900 leading-[1.15] tracking-tighter">
         오늘의 감정을,<br />
-        <span className="italic">영어로 솔직하게.</span>
+        영어로 솔직하게.
       </h1>
-      <p className="mt-4 text-ink-600 text-base sm:text-lg max-w-2xl leading-relaxed">
-        뿌듯함, 서운함, 당황스러움, 부러움 — 한국어로는 자연스럽지만 영어로는 막막했던
-        그 감정들을 일기에 쓸 수 있는 패턴으로 정리했어요.
+      <p className="mt-5 text-grey-600 text-[15px] sm:text-[17px] max-w-xl leading-relaxed font-medium tracking-tight">
+        뿌듯함, 서운함, 당황스러움, 부러움 —<br className="hidden sm:inline" />
+        한국어로는 자연스럽지만 영어로는 막막했던 그 감정들을 일기에 쓸 수 있는 패턴으로 정리했어요.
       </p>
     </section>
   );
@@ -103,36 +100,33 @@ function LoadingGrid() {
   return (
     <div className="grid gap-3 sm:gap-4 grid-cols-1 lg:grid-cols-2">
       {Array.from({ length: 6 }).map((_, i) => (
-        <div key={i} className="h-32 bg-white border border-ink-200 rounded-2xl animate-pulse" />
+        <div key={i} className="h-36 bg-white border border-grey-100 rounded-3xl animate-pulse" />
       ))}
     </div>
   );
 }
 
 function EmptyState({ hasSearch }: { hasSearch: boolean }) {
-  if (hasSearch) {
-    return (
-      <div className="text-center py-16">
-        <p className="text-ink-900 font-medium">검색 결과가 없어요</p>
-        <p className="text-sm text-ink-500 mt-1">다른 키워드로 검색해보세요.</p>
-      </div>
-    );
-  }
   return (
-    <div className="text-center py-16">
-      <p className="text-ink-900 font-medium">표시할 표현이 없어요</p>
+    <div className="bg-white border border-grey-100 rounded-3xl py-20 px-6 text-center">
+      <p className="text-grey-900 font-bold text-[17px] tracking-tight">
+        {hasSearch ? '검색 결과가 없어요' : '표시할 표현이 없어요'}
+      </p>
+      {hasSearch && (
+        <p className="text-[14px] text-grey-500 mt-2 font-medium">다른 키워드로 검색해보세요</p>
+      )}
     </div>
   );
 }
 
 function ErrorState({ message }: { message: string }) {
   return (
-    <div className="bg-white border border-ink-200 rounded-2xl p-6 text-center">
-      <p className="text-ink-900 font-medium">데이터를 불러오지 못했어요</p>
-      <p className="text-sm text-ink-500 mt-1">{message}</p>
+    <div className="bg-white border border-grey-100 rounded-3xl py-16 px-6 text-center">
+      <p className="text-grey-900 font-bold text-[17px] tracking-tight">데이터를 불러오지 못했어요</p>
+      <p className="text-[14px] text-grey-500 mt-2 font-medium">{message}</p>
       <button
         onClick={() => window.location.reload()}
-        className="focus-ring mt-4 px-4 py-1.5 text-sm rounded-full bg-ink-900 text-ink-50 hover:bg-ink-800 transition-colors"
+        className="focus-ring toss-btn-primary mt-6 px-5 py-2.5 rounded-xl text-[14px]"
       >
         다시 시도
       </button>
