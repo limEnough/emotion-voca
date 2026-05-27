@@ -3,7 +3,7 @@ import { useVocab } from '@/hooks/useVocab';
 import { ExpressionCard } from '@/components/ExpressionCard';
 import { CategoryFilter, DifficultyFilter } from '@/components/Filters';
 import { SearchInput } from '@/components/SearchInput';
-import type { Difficulty } from '@/types/domain';
+import type { Difficulty, Expression } from '@/types/domain';
 
 export function HomePage() {
   const { data, isLoading, error, categoryBySlug } = useVocab();
@@ -12,12 +12,13 @@ export function HomePage() {
   const [difficultyFilter, setDifficultyFilter] = useState<Difficulty | 'all'>('all');
   const [search, setSearch] = useState('');
 
-  const filtered = useMemo(() => {
+  // 검색·카테고리 필터까지만 적용한 중간 결과.
+  // → 난이도 카운트는 이걸 기준으로 계산해서 "다른 필터에 반응"하도록.
+  const preFilteredByCategoryAndSearch = useMemo(() => {
     const list = data?.expressions ?? [];
     const q = search.trim().toLowerCase();
-    return list.filter((e) => {
+    return list.filter((e: Expression) => {
       if (categoryFilter !== 'all' && e.category_slug !== categoryFilter) return false;
-      if (difficultyFilter !== 'all' && e.difficulty !== difficultyFilter) return false;
       if (q) {
         const haystack = [e.ko_pattern, e.en_pattern, ...(e.examples ?? []), ...(e.variations ?? [])]
           .join(' ')
@@ -26,16 +27,23 @@ export function HomePage() {
       }
       return true;
     });
-  }, [data, categoryFilter, difficultyFilter, search]);
+  }, [data, categoryFilter, search]);
 
+  // 최종 표시 목록 — 위 결과에 난이도 필터까지 적용
+  const filtered = useMemo(() => {
+    if (difficultyFilter === 'all') return preFilteredByCategoryAndSearch;
+    return preFilteredByCategoryAndSearch.filter((e) => e.difficulty === difficultyFilter);
+  }, [preFilteredByCategoryAndSearch, difficultyFilter]);
+
+  // 난이도별 카운트 — 검색/카테고리 필터가 적용된 결과 기준으로 계산
   const difficultyCounts = useMemo(() => {
     const counts: Record<string, number> = { all: 0, beginner: 0, intermediate: 0, advanced: 0 };
-    (data?.expressions ?? []).forEach((e) => {
+    preFilteredByCategoryAndSearch.forEach((e) => {
       counts.all += 1;
       counts[e.difficulty] = (counts[e.difficulty] ?? 0) + 1;
     });
     return counts;
-  }, [data]);
+  }, [preFilteredByCategoryAndSearch]);
 
   return (
     <div className="min-h-[calc(100vh-4rem)]">
