@@ -1,7 +1,7 @@
-import { Routes, Route, Navigate } from 'react-router-dom';
-import { Header } from '@/components/Header';
-import { HomePage } from '@/pages/HomePage';
-import { DiarySamplesPage } from '@/pages/DiarySamplesPage';
+import { Routes, Route, Navigate } from "react-router-dom";
+import { Header } from "@/components/Header";
+import { HomePage } from "@/pages/HomePage";
+import { DiarySamplesPage } from "@/pages/DiarySamplesPage";
 
 export default function App() {
   return (
@@ -24,7 +24,7 @@ function Footer() {
     <footer className="border-t border-grey-100 bg-white">
       <div className="max-w-5xl mx-auto px-5 sm:px-6 py-8 flex items-center justify-between flex-wrap gap-3">
         <p className="text-[13px] font-semibold text-grey-500 tracking-tight">
-          © Inkwell
+          © emotion-voca
         </p>
         <p className="text-[13px] font-medium text-grey-400 tracking-tight">
           Write what you feel, in English.

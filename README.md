@@ -1,4 +1,4 @@
-# Inkwell · 영어 일기 감정 표현 단어장
+# emotion-voca · 영어 일기 감정 표현 단어장
 
 > 한국어로는 자연스럽지만 영어로는 막막했던 그 감정들을 일기에 쓸 수 있는 패턴으로 정리한 웹앱입니다. **로컬 전용 / 정적 사이트** 버전 — 백엔드나 로그인 없이 동작합니다.
 
@@ -13,12 +13,12 @@
 
 ## 🛠 Tech Stack
 
-| 영역 | 기술 |
-|-----|------|
-| Frontend | React 18, TypeScript, Vite |
-| Styling | Tailwind CSS, Fraunces / Pretendard / JetBrains Mono |
-| Routing | React Router v6 |
-| Data | `public/data/vocab.json` (런타임 fetch) |
+| 영역     | 기술                                                 |
+| -------- | ---------------------------------------------------- |
+| Frontend | React 18, TypeScript, Vite                           |
+| Styling  | Tailwind CSS, Fraunces / Pretendard / JetBrains Mono |
+| Routing  | React Router v6                                      |
+| Data     | `public/data/vocab.json` (런타임 fetch)              |
 
 백엔드/DB/로그인 없음. 정적 사이트로 어디든 배포 가능합니다 (Vercel, Netlify, GitHub Pages, Cloudflare Pages, 심지어 단순 정적 호스팅까지).
 
@@ -62,12 +62,14 @@ npm run preview    # 빌드 결과 로컬 미리보기
 `npm run build` 결과인 `dist/` 폴더를 어디든 업로드하면 됩니다.
 
 **Vercel / Netlify / Cloudflare Pages**
+
 - Build command: `npm run build`
 - Output directory: `dist`
 - 환경변수 없음 ✨
 
 **GitHub Pages**
-- `vite.config.ts`의 `base` 옵션을 저장소 경로(`/inkwell/` 등)로 설정 후 빌드
+
+- `vite.config.ts`의 `base` 옵션을 저장소 경로(`/emotion-voca/` 등)로 설정 후 빌드
 
 ## 🗃 데이터 수정하기
 
