@@ -4,12 +4,16 @@ type Props = {
   placeholder?: string;
 };
 
-export function SearchInput({ value, onChange, placeholder = '한국어 또는 영어로 검색해보세요' }: Props) {
+export function SearchInput({
+  value,
+  onChange,
+  placeholder = "한국어 또는 영어로 검색해보세요",
+}: Props) {
   return (
     <div className="relative w-full">
       <SearchIcon />
       <input
-        type="search"
+        type="text"
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder}
@@ -18,7 +22,7 @@ export function SearchInput({ value, onChange, placeholder = '한국어 또는 �
       />
       {value && (
         <button
-          onClick={() => onChange('')}
+          onClick={() => onChange("")}
           className="absolute right-3 top-1/2 -translate-y-1/2 w-7 h-7 inline-flex items-center justify-center rounded-full bg-grey-300 text-white hover:bg-grey-400 transition-colors focus-ring"
           aria-label="검색어 지우기"
         >
@@ -51,7 +55,17 @@ function SearchIcon() {
 
 function ClearIcon() {
   return (
-    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg
+      width="12"
+      height="12"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
       <line x1="18" y1="6" x2="6" y2="18" />
       <line x1="6" y1="6" x2="18" y2="18" />
     </svg>
