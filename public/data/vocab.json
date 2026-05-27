@@ -1,0 +1,1312 @@
+{
+  "categories": [
+    {
+      "slug": "disappointment",
+      "name_ko": "상심·실망",
+      "name_en": "Disappointment",
+      "description": "노력했는데 안 됐을 때, 기대가 무너졌을 때",
+      "icon": "cloud-rain",
+      "color_key": "sky",
+      "sort_order": 10
+    },
+    {
+      "slug": "hurt-feelings",
+      "name_ko": "서운함",
+      "name_en": "Hurt feelings",
+      "description": "관계에서 마음이 상했을 때",
+      "icon": "mood-sad",
+      "color_key": "plum",
+      "sort_order": 20
+    },
+    {
+      "slug": "flustered",
+      "name_ko": "당황·황당",
+      "name_en": "Flustered",
+      "description": "예상 못한 상황에 놀라거나 어이없을 때",
+      "icon": "alert-circle",
+      "color_key": "amber",
+      "sort_order": 30
+    },
+    {
+      "slug": "pride",
+      "name_ko": "뿌듯·성취감",
+      "name_en": "Pride & Accomplishment",
+      "description": "해냈을 때, 스스로가 대견할 때",
+      "icon": "trophy",
+      "color_key": "teal",
+      "sort_order": 40
+    },
+    {
+      "slug": "regret",
+      "name_ko": "후회·자책",
+      "name_en": "Regret",
+      "description": "돌아봤을 때 아쉽거나 자책할 때",
+      "icon": "mood-sad-dizzy",
+      "color_key": "coral",
+      "sort_order": 50
+    },
+    {
+      "slug": "relief",
+      "name_ko": "안도·평온",
+      "name_en": "Relief & Calm",
+      "description": "마음이 놓이거나 잔잔할 때",
+      "icon": "heart",
+      "color_key": "rose",
+      "sort_order": 60
+    },
+    {
+      "slug": "joy",
+      "name_ko": "즐거움",
+      "name_en": "Joy",
+      "description": "기분 좋고 즐거운 순간",
+      "icon": "sun",
+      "color_key": "ochre",
+      "sort_order": 70
+    },
+    {
+      "slug": "excitement",
+      "name_ko": "신남·흥분",
+      "name_en": "Excitement",
+      "description": "두근거리고 신나는 순간",
+      "icon": "bolt",
+      "color_key": "sunset",
+      "sort_order": 80
+    },
+    {
+      "slug": "happiness",
+      "name_ko": "행복",
+      "name_en": "Happiness",
+      "description": "충만하고 따뜻한 행복감",
+      "icon": "mood-happy",
+      "color_key": "sage",
+      "sort_order": 90
+    },
+    {
+      "slug": "sadness",
+      "name_ko": "우울함",
+      "name_en": "Sadness",
+      "description": "가라앉고 우울할 때",
+      "icon": "cloud",
+      "color_key": "storm",
+      "sort_order": 100
+    },
+    {
+      "slug": "gratitude",
+      "name_ko": "고마움·감사함",
+      "name_en": "Gratitude",
+      "description": "감사하고 고마운 마음",
+      "icon": "heart-handshake",
+      "color_key": "lavender",
+      "sort_order": 110
+    },
+    {
+      "slug": "sorry",
+      "name_ko": "미안함",
+      "name_en": "Sorry & Apologetic",
+      "description": "미안하고 죄책감이 들 때",
+      "icon": "face-mask",
+      "color_key": "sand",
+      "sort_order": 120
+    },
+    {
+      "slug": "annoyance",
+      "name_ko": "짜증",
+      "name_en": "Annoyance",
+      "description": "신경 거슬리고 짜증 날 때",
+      "icon": "flame",
+      "color_key": "ochre",
+      "sort_order": 130
+    },
+    {
+      "slug": "anger",
+      "name_ko": "분노",
+      "name_en": "Anger",
+      "description": "화가 치솟을 때",
+      "icon": "fire",
+      "color_key": "crimson",
+      "sort_order": 140
+    },
+    {
+      "slug": "envy",
+      "name_ko": "부러움·질투",
+      "name_en": "Envy & Jealousy",
+      "description": "부럽고 질투 나는 마음",
+      "icon": "eye",
+      "color_key": "forest",
+      "sort_order": 150
+    },
+    {
+      "slug": "loneliness",
+      "name_ko": "외로움",
+      "name_en": "Loneliness",
+      "description": "혼자라는 느낌, 쓸쓸함",
+      "icon": "moon",
+      "color_key": "indigo",
+      "sort_order": 160
+    }
+  ],
+  "expressions": [
+    {
+      "id": "disappointment-010",
+      "category_slug": "disappointment",
+      "difficulty": "beginner",
+      "ko_pattern": "노력했는데 ~되어 버려서 상심했어",
+      "en_pattern": "I was heartbroken that ___ even though I had tried so hard.",
+      "examples": [
+        "I was heartbroken that I failed the exam even though I had studied for weeks.",
+        "I was heartbroken that the project got cancelled even though I had tried so hard."
+      ],
+      "variations": [
+        "I was crushed when ___",
+        "It broke my heart that ___",
+        "I felt devastated when ___"
+      ],
+      "sort_order": 10
+    },
+    {
+      "id": "disappointment-020",
+      "category_slug": "disappointment",
+      "difficulty": "intermediate",
+      "ko_pattern": "기대했는데 ~여서 실망했어",
+      "en_pattern": "I was let down by ___ after looking forward to it.",
+      "examples": [
+        "I was let down by the movie after looking forward to it all week.",
+        "I was let down by her response after expecting her to be more supportive."
+      ],
+      "variations": [
+        "I had high hopes, but ___",
+        "It didn't live up to my expectations because ___"
+      ],
+      "sort_order": 20
+    },
+    {
+      "id": "disappointment-030",
+      "category_slug": "disappointment",
+      "difficulty": "intermediate",
+      "ko_pattern": "노력이 헛수고가 된 것 같아",
+      "en_pattern": "It feels like all my effort went to waste.",
+      "examples": [
+        "It feels like all my effort went to waste when the client rejected the proposal.",
+        "All those late nights felt pointless when the deadline got pushed back anyway."
+      ],
+      "variations": [
+        "My hard work didn't pay off",
+        "It felt like I was running in place"
+      ],
+      "sort_order": 30
+    },
+    {
+      "id": "disappointment-040",
+      "category_slug": "disappointment",
+      "difficulty": "advanced",
+      "ko_pattern": "~을 기대했던 만큼 더 씁쓸했어",
+      "en_pattern": "The disappointment hit harder because I had been so invested in ___.",
+      "examples": [
+        "The disappointment hit harder because I had been so invested in this opportunity for months.",
+        "The disappointment hit harder because I had been so invested in proving myself this time."
+      ],
+      "variations": [
+        "The higher my hopes, the harder the fall",
+        "It stung more because ___"
+      ],
+      "sort_order": 40
+    },
+    {
+      "id": "hurt-feelings-010",
+      "category_slug": "hurt-feelings",
+      "difficulty": "beginner",
+      "ko_pattern": "~인 모습을 보니 서운했어",
+      "en_pattern": "It hurt my feelings to see ___.",
+      "examples": [
+        "It hurt my feelings to see him laughing with other friends without inviting me.",
+        "It hurt my feelings to see that she didn't even remember my birthday."
+      ],
+      "variations": [
+        "I felt left out when ___",
+        "It stung to see ___",
+        "I couldn't help feeling hurt when ___"
+      ],
+      "sort_order": 10
+    },
+    {
+      "id": "hurt-feelings-020",
+      "category_slug": "hurt-feelings",
+      "difficulty": "intermediate",
+      "ko_pattern": "~해줄 줄 알았는데 안 해서 서운해",
+      "en_pattern": "I had expected ___, so I felt let down when it didn't happen.",
+      "examples": [
+        "I had expected him to call me back, so I felt let down when he didn't.",
+        "I had expected my team to notice my work, so I felt let down when no one mentioned it."
+      ],
+      "variations": [
+        "I thought ___ would ___, but ___",
+        "I was hoping for ___, but instead ___"
+      ],
+      "sort_order": 20
+    },
+    {
+      "id": "hurt-feelings-030",
+      "category_slug": "hurt-feelings",
+      "difficulty": "intermediate",
+      "ko_pattern": "나만 신경 쓰는 것 같아 서운해",
+      "en_pattern": "It feels like I'm the only one putting effort into this.",
+      "examples": [
+        "It feels like I'm the only one putting effort into this friendship lately.",
+        "I'm starting to feel like I care more about us than he does."
+      ],
+      "variations": [
+        "I feel like I'm trying alone",
+        "It's a one-sided effort"
+      ],
+      "sort_order": 30
+    },
+    {
+      "id": "hurt-feelings-040",
+      "category_slug": "hurt-feelings",
+      "difficulty": "advanced",
+      "ko_pattern": "말은 안 했지만 속으로는 서운했어",
+      "en_pattern": "I didn't say anything, but deep down, I was quietly hurt by ___.",
+      "examples": [
+        "I didn't say anything, but deep down, I was quietly hurt by how dismissive she was.",
+        "I didn't say anything, but deep down, I was quietly hurt that no one defended me in the meeting."
+      ],
+      "variations": [
+        "I kept it to myself, but ___ really stung",
+        "Outwardly I was fine, but inside ___"
+      ],
+      "sort_order": 40
+    },
+    {
+      "id": "flustered-010",
+      "category_slug": "flustered",
+      "difficulty": "beginner",
+      "ko_pattern": "~라는 말을 들어서 당황스러웠어",
+      "en_pattern": "I was caught off guard when I was told that ___.",
+      "examples": [
+        "I was caught off guard when I was told that my presentation was scheduled for tomorrow, not next week.",
+        "I was caught off guard when my friend said she didn't want to hang out anymore."
+      ],
+      "variations": [
+        "I didn't know how to react when ___",
+        "I was thrown off when ___",
+        "It threw me off when ___"
+      ],
+      "sort_order": 10
+    },
+    {
+      "id": "flustered-020",
+      "category_slug": "flustered",
+      "difficulty": "intermediate",
+      "ko_pattern": "~여서 어이가 없었어",
+      "en_pattern": "I couldn't believe that ___.",
+      "examples": [
+        "I couldn't believe that the cashier charged me twice for the same item.",
+        "I couldn't believe that he showed up an hour late without an apology."
+      ],
+      "variations": [
+        "I was speechless when ___",
+        "It was unbelievable that ___"
+      ],
+      "sort_order": 20
+    },
+    {
+      "id": "flustered-030",
+      "category_slug": "flustered",
+      "difficulty": "intermediate",
+      "ko_pattern": "예상 못한 ~여서 당황했어",
+      "en_pattern": "I wasn't prepared for ___, so I panicked a bit.",
+      "examples": [
+        "I wasn't prepared for the surprise question in the interview, so I panicked a bit.",
+        "I wasn't prepared for the rain, so I got completely soaked on the way home."
+      ],
+      "variations": [
+        "___ took me by surprise",
+        "I froze when ___"
+      ],
+      "sort_order": 30
+    },
+    {
+      "id": "flustered-040",
+      "category_slug": "flustered",
+      "difficulty": "advanced",
+      "ko_pattern": "뭐라고 대답해야 할지 몰랐어",
+      "en_pattern": "I was at a loss for words when ___.",
+      "examples": [
+        "I was at a loss for words when she suddenly asked me how I really felt about her.",
+        "I was at a loss for words when my boss asked me to lead the project on the spot."
+      ],
+      "variations": [
+        "I didn't know what to say when ___",
+        "Words failed me when ___"
+      ],
+      "sort_order": 40
+    },
+    {
+      "id": "pride-010",
+      "category_slug": "pride",
+      "difficulty": "beginner",
+      "ko_pattern": "~을 해서 뿌듯했어",
+      "en_pattern": "I felt a real sense of accomplishment after ___.",
+      "examples": [
+        "I felt a real sense of accomplishment after finishing the 10k run.",
+        "I felt a real sense of accomplishment after finally submitting my thesis."
+      ],
+      "variations": [
+        "I felt proud of myself for ___",
+        "It was so rewarding to ___",
+        "I gave myself a pat on the back for ___"
+      ],
+      "sort_order": 10
+    },
+    {
+      "id": "pride-020",
+      "category_slug": "pride",
+      "difficulty": "intermediate",
+      "ko_pattern": "꾸준히 한 ~이 결실을 맺었어",
+      "en_pattern": "All my consistent effort on ___ finally paid off.",
+      "examples": [
+        "All my consistent effort on learning English finally paid off when I held a full conversation with a foreigner.",
+        "All my consistent effort on saving money finally paid off when I booked my dream trip."
+      ],
+      "variations": [
+        "My hard work on ___ paid off",
+        "The grind on ___ was worth it"
+      ],
+      "sort_order": 20
+    },
+    {
+      "id": "pride-030",
+      "category_slug": "pride",
+      "difficulty": "beginner",
+      "ko_pattern": "작은 ~도 해냈다는 게 뿌듯해",
+      "en_pattern": "Even something small like ___ made me feel proud today.",
+      "examples": [
+        "Even something small like making my bed in the morning made me feel proud today.",
+        "Even something small like going for a 20-minute walk made me feel proud today."
+      ],
+      "variations": [
+        "I'm proud of myself for the little win of ___",
+        "Small wins like ___ matter"
+      ],
+      "sort_order": 30
+    },
+    {
+      "id": "pride-040",
+      "category_slug": "pride",
+      "difficulty": "advanced",
+      "ko_pattern": "예전의 나라면 못 했을 ~을 해냈어",
+      "en_pattern": "The old me would never have ___, but today I did.",
+      "examples": [
+        "The old me would never have spoken up in a meeting like that, but today I did.",
+        "The old me would never have gone to an event alone, but today I did and actually enjoyed it."
+      ],
+      "variations": [
+        "A year ago I couldn't have ___, but now I can",
+        "I surprised myself by ___ing"
+      ],
+      "sort_order": 40
+    },
+    {
+      "id": "regret-010",
+      "category_slug": "regret",
+      "difficulty": "beginner",
+      "ko_pattern": "~했더라면 좋았을 텐데",
+      "en_pattern": "I wish I had ___.",
+      "examples": [
+        "I wish I had spoken up during the meeting instead of staying silent.",
+        "I wish I had gone to bed earlier last night — I was exhausted all day."
+      ],
+      "variations": [
+        "If only I had ___",
+        "I regret not ___ing"
+      ],
+      "sort_order": 10
+    },
+    {
+      "id": "regret-020",
+      "category_slug": "regret",
+      "difficulty": "intermediate",
+      "ko_pattern": "왜 그랬는지 모르겠어, 스스로 한심해",
+      "en_pattern": "I don't know why I did that — I'm kind of ashamed of myself.",
+      "examples": [
+        "I don't know why I lost my temper with her — I'm kind of ashamed of myself.",
+        "I don't know why I procrastinated all weekend — I'm kind of ashamed of myself."
+      ],
+      "variations": [
+        "I beat myself up over ___",
+        "I keep replaying ___ in my head"
+      ],
+      "sort_order": 20
+    },
+    {
+      "id": "regret-030",
+      "category_slug": "regret",
+      "difficulty": "intermediate",
+      "ko_pattern": "그때 ~하지 말걸",
+      "en_pattern": "I shouldn't have ___.",
+      "examples": [
+        "I shouldn't have said that to my mom; I could see it hurt her.",
+        "I shouldn't have eaten so much late at night — now I feel awful."
+      ],
+      "variations": [
+        "I regret ___ing",
+        "It was a mistake to ___"
+      ],
+      "sort_order": 30
+    },
+    {
+      "id": "regret-040",
+      "category_slug": "regret",
+      "difficulty": "advanced",
+      "ko_pattern": "다르게 행동했다면 결과가 달랐을 텐데",
+      "en_pattern": "Things might have turned out differently if I had ___.",
+      "examples": [
+        "Things might have turned out differently if I had been more honest from the start.",
+        "Things might have turned out differently if I had reached out to him before it was too late."
+      ],
+      "variations": [
+        "I keep wondering what would have happened if ___",
+        "I can't help second-guessing my choice to ___"
+      ],
+      "sort_order": 40
+    },
+    {
+      "id": "relief-010",
+      "category_slug": "relief",
+      "difficulty": "beginner",
+      "ko_pattern": "~여서 다행이야",
+      "en_pattern": "I'm so relieved that ___.",
+      "examples": [
+        "I'm so relieved that the test results came back normal.",
+        "I'm so relieved that I made it to the airport just in time."
+      ],
+      "variations": [
+        "Thank goodness ___",
+        "What a relief that ___",
+        "I can finally breathe easy now that ___"
+      ],
+      "sort_order": 10
+    },
+    {
+      "id": "relief-020",
+      "category_slug": "relief",
+      "difficulty": "intermediate",
+      "ko_pattern": "오랜만에 ~여서 마음이 편했어",
+      "en_pattern": "It had been a while since ___, and it felt so calming.",
+      "examples": [
+        "It had been a while since I read a book by the window, and it felt so calming.",
+        "It had been a while since I called my mom for no reason, and it felt so calming."
+      ],
+      "variations": [
+        "___ was just what I needed",
+        "I felt at peace while ___ing"
+      ],
+      "sort_order": 20
+    },
+    {
+      "id": "relief-030",
+      "category_slug": "relief",
+      "difficulty": "intermediate",
+      "ko_pattern": "마음의 짐을 내려놓은 기분이야",
+      "en_pattern": "It feels like a weight has been lifted off my shoulders.",
+      "examples": [
+        "It feels like a weight has been lifted off my shoulders now that the project is finally over.",
+        "It feels like a weight has been lifted off my shoulders after I finally told him how I felt."
+      ],
+      "variations": [
+        "I feel so much lighter now that ___",
+        "A huge burden is finally gone"
+      ],
+      "sort_order": 30
+    },
+    {
+      "id": "relief-040",
+      "category_slug": "relief",
+      "difficulty": "advanced",
+      "ko_pattern": "걱정했던 만큼은 아니어서 안심이 돼",
+      "en_pattern": "It turned out to be less of a big deal than I feared, which was a relief.",
+      "examples": [
+        "It turned out to be less of a big deal than I feared, which was a relief — the dentist said the cavity was minor.",
+        "It turned out to be less of a big deal than I feared, which was a relief; my boss barely mentioned the mistake."
+      ],
+      "variations": [
+        "I worked myself up over nothing",
+        "All that worrying was for nothing"
+      ],
+      "sort_order": 40
+    },
+    {
+      "id": "joy-010",
+      "category_slug": "joy",
+      "difficulty": "beginner",
+      "ko_pattern": "~을 해서 정말 즐거웠어",
+      "en_pattern": "I had so much fun ___ing.",
+      "examples": [
+        "I had so much fun catching up with old friends over dinner.",
+        "I had so much fun playing board games with my family last night."
+      ],
+      "variations": [
+        "I really enjoyed ___ing",
+        "It was such a blast ___ing"
+      ],
+      "sort_order": 10
+    },
+    {
+      "id": "joy-020",
+      "category_slug": "joy",
+      "difficulty": "intermediate",
+      "ko_pattern": "오랜만에 웃음이 끊이지 않는 하루였어",
+      "en_pattern": "I haven't laughed this much in ages.",
+      "examples": [
+        "I haven't laughed this much in ages — my coworker's stories had me in tears.",
+        "I haven't laughed this much in ages, and my cheeks actually hurt by the end of the night."
+      ],
+      "variations": [
+        "My face hurt from smiling",
+        "I couldn't stop laughing during ___"
+      ],
+      "sort_order": 20
+    },
+    {
+      "id": "joy-030",
+      "category_slug": "joy",
+      "difficulty": "intermediate",
+      "ko_pattern": "사소한 ~이 하루를 즐겁게 해줬어",
+      "en_pattern": "Something small like ___ made my whole day.",
+      "examples": [
+        "Something small like a barista drawing a heart on my latte made my whole day.",
+        "Something small like finding cash in an old jacket made my whole day."
+      ],
+      "variations": [
+        "___ put a smile on my face",
+        "It's the little things — like ___"
+      ],
+      "sort_order": 30
+    },
+    {
+      "id": "joy-040",
+      "category_slug": "joy",
+      "difficulty": "advanced",
+      "ko_pattern": "오늘 같은 날은 두고두고 기억하고 싶어",
+      "en_pattern": "Today was one of those days I want to tuck away and remember.",
+      "examples": [
+        "Today was one of those days I want to tuck away and remember — sunny, slow, and full of laughter.",
+        "Today was one of those days I want to tuck away and remember; nothing big happened, but everything felt right."
+      ],
+      "variations": [
+        "I want to bottle this feeling",
+        "Today felt like a memory I'll come back to"
+      ],
+      "sort_order": 40
+    },
+    {
+      "id": "excitement-010",
+      "category_slug": "excitement",
+      "difficulty": "beginner",
+      "ko_pattern": "~ 때문에 너무 신나",
+      "en_pattern": "I'm so excited about ___.",
+      "examples": [
+        "I'm so excited about the trip next weekend — I've been counting down the days.",
+        "I'm so excited about my new job; I keep imagining what my first day will be like."
+      ],
+      "variations": [
+        "I can't wait for ___",
+        "I'm pumped about ___"
+      ],
+      "sort_order": 10
+    },
+    {
+      "id": "excitement-020",
+      "category_slug": "excitement",
+      "difficulty": "intermediate",
+      "ko_pattern": "두근거려서 잠이 안 와",
+      "en_pattern": "I'm too excited to sleep — ___.",
+      "examples": [
+        "I'm too excited to sleep — tomorrow is my first solo trip abroad.",
+        "I'm too excited to sleep — the concert tickets I've waited months for finally arrived."
+      ],
+      "variations": [
+        "My heart is racing thinking about ___",
+        "I keep tossing and turning over ___"
+      ],
+      "sort_order": 20
+    },
+    {
+      "id": "excitement-030",
+      "category_slug": "excitement",
+      "difficulty": "intermediate",
+      "ko_pattern": "~을 떠올리기만 해도 설레",
+      "en_pattern": "Just thinking about ___ gives me butterflies.",
+      "examples": [
+        "Just thinking about seeing him again gives me butterflies.",
+        "Just thinking about moving into my new apartment gives me butterflies."
+      ],
+      "variations": [
+        "I get goosebumps every time I think about ___",
+        "My stomach flips when I imagine ___"
+      ],
+      "sort_order": 30
+    },
+    {
+      "id": "excitement-040",
+      "category_slug": "excitement",
+      "difficulty": "advanced",
+      "ko_pattern": "마음이 들떠서 일이 손에 안 잡혀",
+      "en_pattern": "I was so worked up about ___ that I couldn't focus on anything else.",
+      "examples": [
+        "I was so worked up about the audition results that I couldn't focus on anything else all afternoon.",
+        "I was so worked up about meeting my favorite author that I couldn't focus on anything else at work."
+      ],
+      "variations": [
+        "My head was somewhere else all day",
+        "I was practically vibrating with excitement"
+      ],
+      "sort_order": 40
+    },
+    {
+      "id": "happiness-010",
+      "category_slug": "happiness",
+      "difficulty": "beginner",
+      "ko_pattern": "오늘은 정말 행복한 하루였어",
+      "en_pattern": "Today was one of those happy days.",
+      "examples": [
+        "Today was one of those happy days where everything just seemed to go right.",
+        "Today was one of those happy days I'll think about whenever I need cheering up."
+      ],
+      "variations": [
+        "Today was a really good day",
+        "I'm feeling grateful for today"
+      ],
+      "sort_order": 10
+    },
+    {
+      "id": "happiness-020",
+      "category_slug": "happiness",
+      "difficulty": "intermediate",
+      "ko_pattern": "~과 함께 있을 때가 가장 행복해",
+      "en_pattern": "I feel happiest when I'm with ___.",
+      "examples": [
+        "I feel happiest when I'm with my closest friends, just doing nothing in particular.",
+        "I feel happiest when I'm with my dog on a long Sunday walk."
+      ],
+      "variations": [
+        "Nothing makes me happier than ___",
+        "My happy place is ___"
+      ],
+      "sort_order": 20
+    },
+    {
+      "id": "happiness-030",
+      "category_slug": "happiness",
+      "difficulty": "intermediate",
+      "ko_pattern": "마음이 따뜻해지는 ~이었어",
+      "en_pattern": "___ warmed my heart today.",
+      "examples": [
+        "My grandma's handwritten letter warmed my heart today.",
+        "Watching the kids laugh in the park warmed my heart today."
+      ],
+      "variations": [
+        "It melted my heart when ___",
+        "My heart felt full when ___"
+      ],
+      "sort_order": 30
+    },
+    {
+      "id": "happiness-040",
+      "category_slug": "happiness",
+      "difficulty": "advanced",
+      "ko_pattern": "이런 평범한 순간이 진짜 행복이라는 걸 느꼈어",
+      "en_pattern": "I realized today that real happiness lives in moments like ___.",
+      "examples": [
+        "I realized today that real happiness lives in moments like sharing a quiet coffee with my partner.",
+        "I realized today that real happiness lives in moments like cooking dinner with music on."
+      ],
+      "variations": [
+        "Happiness, I'm learning, is made of small things — like ___",
+        "Contentment crept up on me while ___ing"
+      ],
+      "sort_order": 40
+    },
+    {
+      "id": "sadness-010",
+      "category_slug": "sadness",
+      "difficulty": "beginner",
+      "ko_pattern": "오늘은 그냥 우울해",
+      "en_pattern": "I just feel down today for no clear reason.",
+      "examples": [
+        "I just feel down today for no clear reason — even my favorite music didn't help.",
+        "I just feel down today for no clear reason; I'd rather not talk to anyone."
+      ],
+      "variations": [
+        "I'm in a bit of a funk today",
+        "I'm not feeling like myself"
+      ],
+      "sort_order": 10
+    },
+    {
+      "id": "sadness-020",
+      "category_slug": "sadness",
+      "difficulty": "intermediate",
+      "ko_pattern": "~ 때문에 마음이 무거워",
+      "en_pattern": "___ has been weighing on me.",
+      "examples": [
+        "That conversation with my dad has been weighing on me all week.",
+        "The thought of moving away has been weighing on me more than I expected."
+      ],
+      "variations": [
+        "I can't shake the feeling of ___",
+        "___ has been heavy on my mind"
+      ],
+      "sort_order": 20
+    },
+    {
+      "id": "sadness-030",
+      "category_slug": "sadness",
+      "difficulty": "intermediate",
+      "ko_pattern": "아무 의욕이 없는 하루였어",
+      "en_pattern": "I had no motivation to do anything today.",
+      "examples": [
+        "I had no motivation to do anything today — I just lay in bed scrolling for hours.",
+        "I had no motivation to do anything today, not even the things I usually love."
+      ],
+      "variations": [
+        "I felt completely drained",
+        "Even getting out of bed felt like too much"
+      ],
+      "sort_order": 30
+    },
+    {
+      "id": "sadness-040",
+      "category_slug": "sadness",
+      "difficulty": "advanced",
+      "ko_pattern": "괜찮은 척했지만 사실 안 괜찮았어",
+      "en_pattern": "I kept up appearances all day, but I wasn't really okay.",
+      "examples": [
+        "I kept up appearances all day, but I wasn't really okay — I cried as soon as I got home.",
+        "I kept up appearances all day, but I wasn't really okay; smiling took everything I had."
+      ],
+      "variations": [
+        "I was holding it together on the outside",
+        "I put on a brave face, but inside ___"
+      ],
+      "sort_order": 40
+    },
+    {
+      "id": "gratitude-010",
+      "category_slug": "gratitude",
+      "difficulty": "beginner",
+      "ko_pattern": "~에게 정말 고마운 하루야",
+      "en_pattern": "I'm so grateful to ___ today.",
+      "examples": [
+        "I'm so grateful to my roommate today — she cooked dinner when I was too tired to move.",
+        "I'm so grateful to my mentor today; her advice changed how I see the whole project."
+      ],
+      "variations": [
+        "Thank goodness for ___",
+        "I owe ___ one"
+      ],
+      "sort_order": 10
+    },
+    {
+      "id": "gratitude-020",
+      "category_slug": "gratitude",
+      "difficulty": "intermediate",
+      "ko_pattern": "당연한 게 아니라는 걸 새삼 느꼈어",
+      "en_pattern": "I was reminded today not to take ___ for granted.",
+      "examples": [
+        "I was reminded today not to take my health for granted after hearing about a friend's diagnosis.",
+        "I was reminded today not to take my parents for granted; they won't be around forever."
+      ],
+      "variations": [
+        "I don't say it enough, but I'm thankful for ___",
+        "I needed the reminder that ___ is a gift"
+      ],
+      "sort_order": 20
+    },
+    {
+      "id": "gratitude-030",
+      "category_slug": "gratitude",
+      "difficulty": "intermediate",
+      "ko_pattern": "~의 작은 친절이 큰 도움이 됐어",
+      "en_pattern": "A small kindness from ___ meant a lot to me today.",
+      "examples": [
+        "A small kindness from a stranger holding the door meant a lot to me today.",
+        "A small kindness from my coworker bringing me coffee meant a lot to me today."
+      ],
+      "variations": [
+        "___'s little gesture really brightened my day",
+        "It was such a thoughtful thing for ___ to do"
+      ],
+      "sort_order": 30
+    },
+    {
+      "id": "gratitude-040",
+      "category_slug": "gratitude",
+      "difficulty": "advanced",
+      "ko_pattern": "이 모든 게 얼마나 감사한 일인지 새삼 깨달았어",
+      "en_pattern": "It hit me today how lucky I am to have ___.",
+      "examples": [
+        "It hit me today how lucky I am to have people who check in on me without being asked.",
+        "It hit me today how lucky I am to have a job that lets me come home and rest."
+      ],
+      "variations": [
+        "I count myself fortunate for ___",
+        "I sometimes forget how blessed I am to ___"
+      ],
+      "sort_order": 40
+    },
+    {
+      "id": "sorry-010",
+      "category_slug": "sorry",
+      "difficulty": "beginner",
+      "ko_pattern": "~에게 너무 미안해",
+      "en_pattern": "I feel so bad about ___.",
+      "examples": [
+        "I feel so bad about snapping at my sister this morning over something small.",
+        "I feel so bad about forgetting our anniversary; I want to make it up to her."
+      ],
+      "variations": [
+        "I owe ___ an apology",
+        "I keep thinking about how I let ___ down"
+      ],
+      "sort_order": 10
+    },
+    {
+      "id": "sorry-020",
+      "category_slug": "sorry",
+      "difficulty": "intermediate",
+      "ko_pattern": "내가 ~한 게 마음에 걸려",
+      "en_pattern": "It's been bothering me that I ___.",
+      "examples": [
+        "It's been bothering me that I didn't reply to her message until two days later.",
+        "It's been bothering me that I left the meeting without thanking the team."
+      ],
+      "variations": [
+        "I can't stop thinking about how I ___",
+        "I feel guilty for ___ing"
+      ],
+      "sort_order": 20
+    },
+    {
+      "id": "sorry-030",
+      "category_slug": "sorry",
+      "difficulty": "intermediate",
+      "ko_pattern": "어떻게 사과해야 할지 모르겠어",
+      "en_pattern": "I don't even know how to begin to apologize for ___.",
+      "examples": [
+        "I don't even know how to begin to apologize for what I said in anger last night.",
+        "I don't even know how to begin to apologize for missing such an important day for him."
+      ],
+      "variations": [
+        "A simple 'sorry' doesn't feel like enough for ___",
+        "I'm not sure any words will make up for ___"
+      ],
+      "sort_order": 30
+    },
+    {
+      "id": "sorry-040",
+      "category_slug": "sorry",
+      "difficulty": "advanced",
+      "ko_pattern": "내 행동이 ~에게 상처가 됐다는 걸 깨달았어",
+      "en_pattern": "I realized too late that my behavior had hurt ___.",
+      "examples": [
+        "I realized too late that my behavior had hurt my closest friend, and I'm still working out how to make it right.",
+        "I realized too late that my behavior had hurt my parents more than they let on."
+      ],
+      "variations": [
+        "It dawned on me that ___ had been hurt by what I did",
+        "I didn't see the damage I'd done to ___ until now"
+      ],
+      "sort_order": 40
+    },
+    {
+      "id": "annoyance-010",
+      "category_slug": "annoyance",
+      "difficulty": "beginner",
+      "ko_pattern": "~ 때문에 짜증 났어",
+      "en_pattern": "___ really annoyed me today.",
+      "examples": [
+        "The slow Wi-Fi at the café really annoyed me today.",
+        "My coworker interrupting me every five minutes really annoyed me today."
+      ],
+      "variations": [
+        "___ got on my nerves",
+        "I was so irritated by ___"
+      ],
+      "sort_order": 10
+    },
+    {
+      "id": "annoyance-020",
+      "category_slug": "annoyance",
+      "difficulty": "intermediate",
+      "ko_pattern": "별일 아닌데 자꾸 신경 쓰여",
+      "en_pattern": "It's a small thing, but ___ keeps bugging me.",
+      "examples": [
+        "It's a small thing, but the way she said it keeps bugging me.",
+        "It's a small thing, but the unanswered text keeps bugging me all day."
+      ],
+      "variations": [
+        "I can't let go of ___",
+        "___ shouldn't bother me this much, but it does"
+      ],
+      "sort_order": 20
+    },
+    {
+      "id": "annoyance-030",
+      "category_slug": "annoyance",
+      "difficulty": "intermediate",
+      "ko_pattern": "오늘은 모든 게 거슬려",
+      "en_pattern": "Everything is rubbing me the wrong way today.",
+      "examples": [
+        "Everything is rubbing me the wrong way today — even the sound of my own typing.",
+        "Everything is rubbing me the wrong way today; I think I just need to be alone for a while."
+      ],
+      "variations": [
+        "I'm short on patience today",
+        "I woke up on the wrong side of the bed"
+      ],
+      "sort_order": 30
+    },
+    {
+      "id": "annoyance-040",
+      "category_slug": "annoyance",
+      "difficulty": "advanced",
+      "ko_pattern": "참다 참다 결국 폭발할 뻔했어",
+      "en_pattern": "I held it in for so long that I almost snapped at ___.",
+      "examples": [
+        "I held it in for so long that I almost snapped at my coworker over a tiny request.",
+        "I held it in for so long that I almost snapped at the customer service rep on the phone."
+      ],
+      "variations": [
+        "My patience was wearing dangerously thin",
+        "I came close to losing it over ___"
+      ],
+      "sort_order": 40
+    },
+    {
+      "id": "anger-010",
+      "category_slug": "anger",
+      "difficulty": "beginner",
+      "ko_pattern": "~ 때문에 정말 화났어",
+      "en_pattern": "I'm really angry about ___.",
+      "examples": [
+        "I'm really angry about the way I was talked down to in the meeting.",
+        "I'm really angry about how unfair the decision was."
+      ],
+      "variations": [
+        "___ made my blood boil",
+        "I'm furious that ___"
+      ],
+      "sort_order": 10
+    },
+    {
+      "id": "anger-020",
+      "category_slug": "anger",
+      "difficulty": "intermediate",
+      "ko_pattern": "그 말을 듣고 너무 어이없어서 화가 났어",
+      "en_pattern": "I was so taken aback that I got angry when ___.",
+      "examples": [
+        "I was so taken aback that I got angry when he said it was 'just a joke'.",
+        "I was so taken aback that I got angry when she blamed me for something I didn't do."
+      ],
+      "variations": [
+        "I saw red when ___",
+        "Something in me snapped when ___"
+      ],
+      "sort_order": 20
+    },
+    {
+      "id": "anger-030",
+      "category_slug": "anger",
+      "difficulty": "intermediate",
+      "ko_pattern": "마음을 가라앉히려고 노력했어",
+      "en_pattern": "I had to take a step back and cool down before I said something I'd regret.",
+      "examples": [
+        "I had to take a step back and cool down before I said something I'd regret to my manager.",
+        "I had to take a step back and cool down before I said something I'd regret in the group chat."
+      ],
+      "variations": [
+        "I bit my tongue to keep from blowing up",
+        "I walked away to avoid making it worse"
+      ],
+      "sort_order": 30
+    },
+    {
+      "id": "anger-040",
+      "category_slug": "anger",
+      "difficulty": "advanced",
+      "ko_pattern": "화가 가라앉질 않아 계속 곱씹게 돼",
+      "en_pattern": "I can't stop replaying what happened in my head, and the anger keeps simmering.",
+      "examples": [
+        "I can't stop replaying what happened in my head, and the anger keeps simmering even hours later.",
+        "I can't stop replaying what happened in my head, and the anger keeps simmering every time I think of his face."
+      ],
+      "variations": [
+        "The more I think about it, the angrier I get",
+        "It's eating away at me — what they did"
+      ],
+      "sort_order": 40
+    },
+    {
+      "id": "envy-010",
+      "category_slug": "envy",
+      "difficulty": "beginner",
+      "ko_pattern": "~이 부러워",
+      "en_pattern": "I'm a little jealous of ___.",
+      "examples": [
+        "I'm a little jealous of my friend's new apartment with the huge windows.",
+        "I'm a little jealous of how my cousin always seems so confident."
+      ],
+      "variations": [
+        "I envy ___",
+        "I wish I had ___ like ___ does"
+      ],
+      "sort_order": 10
+    },
+    {
+      "id": "envy-020",
+      "category_slug": "envy",
+      "difficulty": "intermediate",
+      "ko_pattern": "비교하지 말아야지 하면서도 자꾸 비교하게 돼",
+      "en_pattern": "I keep comparing myself to ___ even though I know I shouldn't.",
+      "examples": [
+        "I keep comparing myself to my classmates on LinkedIn even though I know I shouldn't.",
+        "I keep comparing myself to my sister's career even though I know I shouldn't."
+      ],
+      "variations": [
+        "Comparison really is the thief of joy",
+        "Scrolling social media made me feel small"
+      ],
+      "sort_order": 20
+    },
+    {
+      "id": "envy-030",
+      "category_slug": "envy",
+      "difficulty": "intermediate",
+      "ko_pattern": "축하해주면서도 마음 한편이 씁쓸했어",
+      "en_pattern": "I was happy for ___, but a small part of me felt bitter.",
+      "examples": [
+        "I was happy for her promotion, but a small part of me felt bitter that I had been passed over.",
+        "I was happy for him, but a small part of me felt bitter that things came so easily to him."
+      ],
+      "variations": [
+        "I clapped on the outside but ached on the inside",
+        "Mixed feelings — I was glad for ___, but also envious"
+      ],
+      "sort_order": 30
+    },
+    {
+      "id": "envy-040",
+      "category_slug": "envy",
+      "difficulty": "advanced",
+      "ko_pattern": "그들이 가진 ~을 보면서 내 부족함이 더 크게 느껴졌어",
+      "en_pattern": "Seeing what ___ has only made me more aware of what I'm lacking.",
+      "examples": [
+        "Seeing what they've built together only made me more aware of what I'm lacking in my own relationships.",
+        "Seeing what my peers have achieved only made me more aware of what I'm lacking in my career."
+      ],
+      "variations": [
+        "Their success holds a mirror up to my own gaps",
+        "I left feeling smaller than when I arrived"
+      ],
+      "sort_order": 40
+    },
+    {
+      "id": "loneliness-010",
+      "category_slug": "loneliness",
+      "difficulty": "beginner",
+      "ko_pattern": "오늘은 좀 외로웠어",
+      "en_pattern": "I felt a little lonely today.",
+      "examples": [
+        "I felt a little lonely today, even though I had things to do.",
+        "I felt a little lonely today walking home after work."
+      ],
+      "variations": [
+        "I missed having someone around",
+        "It was one of those quiet, lonely days"
+      ],
+      "sort_order": 10
+    },
+    {
+      "id": "loneliness-020",
+      "category_slug": "loneliness",
+      "difficulty": "intermediate",
+      "ko_pattern": "사람들 사이에 있어도 혼자인 것 같았어",
+      "en_pattern": "I felt alone even in a room full of people.",
+      "examples": [
+        "I felt alone even in a room full of people at the party last night.",
+        "I felt alone even in a room full of people during the team lunch."
+      ],
+      "variations": [
+        "I was surrounded but disconnected",
+        "The crowd somehow made it worse"
+      ],
+      "sort_order": 20
+    },
+    {
+      "id": "loneliness-030",
+      "category_slug": "loneliness",
+      "difficulty": "intermediate",
+      "ko_pattern": "이런 기분을 나눌 사람이 없는 게 더 외로워",
+      "en_pattern": "What makes it lonelier is having no one to share this feeling with.",
+      "examples": [
+        "What makes it lonelier is having no one to share this feeling with after a long day.",
+        "What makes it lonelier is having no one to share this feeling with when I get good news, too."
+      ],
+      "variations": [
+        "I wish I had someone I could just call",
+        "The silence in my apartment felt louder than usual"
+      ],
+      "sort_order": 30
+    },
+    {
+      "id": "loneliness-040",
+      "category_slug": "loneliness",
+      "difficulty": "advanced",
+      "ko_pattern": "익숙해질 줄 알았던 외로움이 오늘은 유난히 무거웠어",
+      "en_pattern": "The loneliness I thought I'd gotten used to felt heavier than usual today.",
+      "examples": [
+        "The loneliness I thought I'd gotten used to felt heavier than usual today — maybe it was the rain.",
+        "The loneliness I thought I'd gotten used to felt heavier than usual today after seeing everyone post about their weekends."
+      ],
+      "variations": [
+        "The hollow feeling crept back in",
+        "Some days the quiet is comforting; today it wasn't"
+      ],
+      "sort_order": 40
+    }
+  ],
+  "diary_samples": [
+    {
+      "id": "sample-1",
+      "title": "A long Monday",
+      "date_label": "Mon · cloudy",
+      "mood_summary": "월요일 발표 후의 후회와 안도가 뒤섞인 하루",
+      "sort_order": 10,
+      "sentences": [
+        {
+          "id": "sample-1-1",
+          "ko": "월요일 아침부터 발표가 잡혀 있어서 너무 떨렸어.",
+          "en": "I was so nervous because the presentation was scheduled for Monday morning.",
+          "category_slug": null
+        },
+        {
+          "id": "sample-1-2",
+          "ko": "발표 도중 한 부분에서 머릿속이 하얘져서 당황했어.",
+          "en": "I was at a loss for words when my mind suddenly went blank in the middle of the presentation.",
+          "category_slug": "flustered"
+        },
+        {
+          "id": "sample-1-3",
+          "ko": "조용히 넘어가긴 했지만, 더 잘했을 수 있었는데 하는 아쉬움이 남았어.",
+          "en": "I wish I had prepared a bit more for the Q&A part instead of rushing through it.",
+          "category_slug": "regret"
+        },
+        {
+          "id": "sample-1-4",
+          "ko": "그래도 끝났다는 게 마치 어깨에서 짐을 내려놓은 기분이었어.",
+          "en": "Still, it feels like a weight has been lifted off my shoulders now that it's finally over.",
+          "category_slug": "relief"
+        },
+        {
+          "id": "sample-1-5",
+          "ko": "팀장님이 작은 부분을 칭찬해주신 게 의외로 큰 위로가 됐어.",
+          "en": "A small kindness from my manager, who praised one detail, meant a lot to me today.",
+          "category_slug": "gratitude"
+        },
+        {
+          "id": "sample-1-6",
+          "ko": "오늘 같은 날은 일찍 자는 게 나 자신에게 주는 선물 같아.",
+          "en": "Going to bed early on a day like today feels like a little gift to myself.",
+          "category_slug": "happiness"
+        }
+      ]
+    },
+    {
+      "id": "sample-2",
+      "title": "Scrolling at midnight",
+      "date_label": "Wed · drizzle",
+      "mood_summary": "SNS 스크롤 중 마음이 복잡해진 늦은 밤",
+      "sort_order": 20,
+      "sentences": [
+        {
+          "id": "sample-2-1",
+          "ko": "잠이 안 와서 인스타를 한 시간 넘게 스크롤했어.",
+          "en": "I couldn't sleep, so I ended up scrolling Instagram for over an hour.",
+          "category_slug": null
+        },
+        {
+          "id": "sample-2-2",
+          "ko": "친구가 새로 이사 간 집 사진을 보니 부럽기도 하고 묘하게 씁쓸했어.",
+          "en": "I was happy for my friend's new place, but a small part of me felt bitter that I'm still in the same apartment.",
+          "category_slug": "envy"
+        },
+        {
+          "id": "sample-2-3",
+          "ko": "비교하지 말아야지 하면서도 자꾸 비교하게 되더라.",
+          "en": "I keep comparing myself to people online even though I know I shouldn't.",
+          "category_slug": "envy"
+        },
+        {
+          "id": "sample-2-4",
+          "ko": "이런 기분을 솔직히 털어놓을 사람이 없다는 게 외로웠어.",
+          "en": "What makes it lonelier is having no one to share this feeling with at this hour.",
+          "category_slug": "loneliness"
+        },
+        {
+          "id": "sample-2-5",
+          "ko": "그래도 내가 이런 감정을 글로 쓰고 있다는 자체가 작은 발전 같아서 뿌듯해.",
+          "en": "Even something small like writing this down honestly made me feel proud of myself tonight.",
+          "category_slug": "pride"
+        }
+      ]
+    },
+    {
+      "id": "sample-3",
+      "title": "An unexpected good day",
+      "date_label": "Sat · clear",
+      "mood_summary": "기대 없던 토요일이 의외로 따뜻했던 하루",
+      "sort_order": 30,
+      "sentences": [
+        {
+          "id": "sample-3-1",
+          "ko": "원래는 종일 집에만 있으려고 했어.",
+          "en": "I had planned to stay in all day and do nothing in particular.",
+          "category_slug": null
+        },
+        {
+          "id": "sample-3-2",
+          "ko": "엄마가 갑자기 점심 먹으러 오라는 전화를 해서 좀 당황했어.",
+          "en": "I was caught off guard when my mom called and told me to come over for lunch.",
+          "category_slug": "flustered"
+        },
+        {
+          "id": "sample-3-3",
+          "ko": "오랜만에 가족과 둘러앉아 밥 먹는 게 생각보다 좋았어.",
+          "en": "It had been a while since I sat down with my family like that, and it felt so calming.",
+          "category_slug": "relief"
+        },
+        {
+          "id": "sample-3-4",
+          "ko": "엄마가 끓여준 된장국을 보니 마음이 따뜻해졌어.",
+          "en": "Mom's homemade soup warmed my heart today in a way I didn't expect.",
+          "category_slug": "happiness"
+        },
+        {
+          "id": "sample-3-5",
+          "ko": "당연하게 여겼던 이 시간이 사실 얼마나 감사한 일인지 새삼 깨달았어.",
+          "en": "I was reminded today not to take ordinary afternoons with family for granted.",
+          "category_slug": "gratitude"
+        },
+        {
+          "id": "sample-3-6",
+          "ko": "오늘 같은 날은 두고두고 기억하고 싶어.",
+          "en": "Today was one of those days I want to tuck away and remember.",
+          "category_slug": "joy"
+        }
+      ]
+    }
+  ],
+  "version": "1.0.0",
+  "generated_at": "2026-05-27T01:35:24.796Z"
+}
